@@ -97,7 +97,7 @@
 
                         bindings = <
     &kp Q        &kp W       &kp F         &kp P       &kp B                     &kp J  &kp L         &kp U          &kp Y        &kp SQT
-    &hmp LGUI A  &hmr LALT R &hmm LSHIFT S &hmi CTRL T &kp G                     &kp M  &hmi RCTRL N  &hmm RSHIFT E  &hmr LALT I  &hmp RGUI O
+    &hmp LGUI A  &hmr LALT R &hmm LSHIFT S &hmi LCTRL T &kp G                     &kp M  &hmi RCTRL N  &hmm RSHIFT E  &hmr LALT I  &hmp RGUI O
     &kp Z        &kp X       &kp C         &kp D       &kp V                     &kp K  &kp H         &kp COMMA      &kp DOT      &kp FSLH
                              &kp ESC       &lt NUM TAB &lt NAV SPACE      &lt SYM BSPC  &lt FUNC RET  &kp LGUI
                         >;
