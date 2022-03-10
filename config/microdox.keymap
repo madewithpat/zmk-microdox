@@ -90,18 +90,18 @@
 // |  GUI |  ALT | SHFT | CTRL |      |        |      | CTRL | SHFT |  ALT |  GUI |
 // |------+------+------+------+------|        |------+------+------+------+------|
 // |   Z  |   X  |   C  |   D  |   V  |        |   K  |   H  | ,  < | .  > | /  ? |
-// |      |      |      |      |      |        |      |      |      |      |      |
+// | SHFT |      |      |      |      |        |      |      |      |      | SHFT |
 // `------+------+------+------+------|        |------+------+------+------+------'
-//               |      | TAB  | SPC  |        | BSP  | RET  |      |
+//               | ESC  | TAB  | SPC  |        | BSP  | RET  | DEL  |
 //               |      | NUM  | NAV  |        | SYM  | FUNC |      |
 //               `--------------------'        `--------------------'
 //
 
                         bindings = <
-    &kp Q        &kp W       &kp F         &kp P        &kp B                     &kp J  &kp L         &kp U          &kp Y        &kp SQT
-    &hmp LGUI A  &hmr LALT R &hmm LSHIFT S &hmi LCTRL T &kp G                     &kp M  &hmi RCTRL N  &hmm RSHIFT E  &hmr LALT I  &hmp RGUI O
-    &kp Z        &kp X       &kp C         &kp D        &kp V                     &kp K  &kp H         &kp COMMA      &kp DOT      &kp FSLH
-                             &kp ESC       &lt NUM TAB  &lt NAV SPACE      &lt SYM BSPC  &lt FUNC RET  &kp DEL
+    &kp Q         &kp W       &kp F         &kp P        &kp B                     &kp J  &kp L         &kp U          &kp Y        &kp SQT
+    &hmp LGUI A   &hmr LALT R &hmm LSHIFT S &hmi LCTRL T &kp G                     &kp M  &hmi RCTRL N  &hmm RSHIFT E  &hmr LALT I  &hmp RGUI O
+    &hmm LSHIFT Z &kp X       &kp C         &kp D        &kp V                     &kp K  &kp H         &kp COMMA      &kp DOT      &hmm RSHIFT FSLH
+                              &kp ESC       &lt NUM TAB  &lt NAV SPACE      &lt SYM BSPC  &lt FUNC RET  &kp DEL
                         >;
                 };
                 
@@ -125,9 +125,9 @@
 //               `--------------------'        `--------------------'
 //
                         bindings = <
-   &kp ESC  &none     &kp LC(V)  &kp LC(C)   &kp LC(X)  &kp PG_UP &kp HOME &kp UP   &kp END   &kp DEL
-   &kp LGUI &kp LALT  &kp LSHIFT &kp LCTRL   &kp RET    &kp PG_DN &kp LEFT &kp DOWN &kp RIGHT &kp BSPC
-   &none    &none     &kp PT     &kp NT      &none      &kp BSLH  &kp WINL &none    &kp WINR  &kp RET
+   &kp ESC  &none     &kp LC(V)  &kp LC(C)   &kp LC(X)  &kp PG_UP &kp HOME &kp UP   &kp END   &kp BSPC
+   &kp LGUI &kp LALT  &kp LSHIFT &kp LCTRL   &kp RET    &kp PG_DN &kp LEFT &kp DOWN &kp RIGHT &kp RET
+   &none    &none     &kp PT     &kp NT      &none      &kp BSLH  &kp WINL &none    &kp WINR  &kp DEL
                       &trans     &trans      &trans     &trans    &trans   &trans
                         >;
                 };
