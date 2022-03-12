@@ -87,21 +87,21 @@
 // |      |      |      |      |      |        |      |      |      |      |      |
 // |------+------+------+------+------|        |------+------+------+------+------|
 // |   A  |   R  |   S  |   T  |   G  |        |   M  |   N  |   E  |   I  |   O  |
-// |  GUI |  ALT | SHFT | CTRL |      |        |      | CTRL | SHFT |  ALT |  GUI |
+// |      |      | SHFT | CTRL |      |        |      | CTRL | SHFT |      |      |
 // |------+------+------+------+------|        |------+------+------+------+------|
 // |   Z  |   X  |   C  |   D  |   V  |        |   K  |   H  | ,  < | .  > | /  ? |
-// | SHFT |      |      |      |      |        |      |      |      |      | SHFT |
+// |      |      |      |      |      |        |      |      |      |      |      |
 // `------+------+------+------+------|        |------+------+------+------+------'
-//               | ESC  | TAB  | SPC  |        | BSP  | RET  | DEL  |
+//               | ESC  | TAB  | SPC  |        | BSP  | RET  | GUI  |
 //               |      | NUM  | NAV  |        | SYM  | FUNC |      |
 //               `--------------------'        `--------------------'
 //
 
                         bindings = <
-    &kp Q         &kp W       &kp F         &kp P        &kp B                     &kp J  &kp L         &kp U          &kp Y        &kp SQT
-    &hmp LGUI A   &hmr LALT R &hmm LSHIFT S &hmi LCTRL T &kp G                     &kp M  &hmi RCTRL N  &hmm RSHIFT E  &hmr LALT I  &hmp RGUI O
-    &hmm LSHIFT Z &kp X       &kp C         &kp D        &kp V                     &kp K  &kp H         &kp COMMA      &kp DOT      &hmm RSHIFT FSLH
-                              &kp ESC       &lt NUM TAB  &lt NAV SPACE      &lt SYM BSPC  &lt FUNC RET  &kp DEL
+    &kp Q   &kp W     &kp F         &kp P        &kp B                     &kp J  &kp L         &kp U          &kp Y     &kp SQT
+    &kp A   &kp R     &hmm LSHIFT S &hmi LCTRL T &kp G                     &kp M  &hmi RCTRL N  &hmm RSHIFT E  &kp I     &kp O
+    &kp Z   &kp X     &kp C         &kp D        &kp V                     &kp K  &kp H         &kp COMMA      &kp DOT   &kp FSLH
+                      &kp LALT      &lt NUM TAB  &lt NAV SPACE      &lt SYM BSPC  &lt FUNC RET  &kp LGUI
                         >;
                 };
                 
@@ -167,7 +167,7 @@
 //
 // ,----------------------------------.         ,----------------------------------.
 // |      |      |      |      |      |         |  *   | 7  & | 8  * | 9  ( |  +   |
-// |      |      |      |      |      |         |      |      |      |      |      |
+// |      |      |      |      |      |         |      |      |      |      |      |    
 // |------+------+------+------+------|         |------+------+------+------+------|
 // |      |      |      |      |      |         |  =   | 4  $ | 5  % | 6  ^ |  -   |
 // | GUI  | ALT  | SHFT | CTRL |      |         |      |      |      |      |      |
@@ -192,13 +192,13 @@
 // F-Key Layer
 //
 // ,----------------------------------.         ,----------------------------------.
-// |  F12 |  F7  |  F8  |  F9  |      |         |      |      |      |      |      |
+// |  F11 |  F12 |      |      |      |         |      |      |      |      |      |
 // |      |      |      |      |      |         |      |      |      |      |      |
 // |------+------+------+------+------|         |------+------+------+------+------|
-// |  F11 |  F4  |  F5  |  F6  |      |         | CAPS |      |      |      |      |
+// |  F1  |  F2  |  F3  |  F4  |  F5  |         | CAPS |      |      |      |      |
 // |      |      |      |      |      |         |      | CTRL | SHFT | ALT  | GUI  |
 // |------+------+------+------+------|         |------+------+------+------+------|
-// |  F10 |  F1  |  F2  |  F3  |      |         |      |      |      |      |      |
+// |  F6  |  F7  |  F8  |  F9  | F10  |         |      |      |      |      |      |
 // |      |      |      |      |      |         |      |      |      |      |      |
 // `-------------+------+------+------|         |------+------+------+-------------'
 //               |      |      |      |         |      |      |      |
