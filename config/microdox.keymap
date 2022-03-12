@@ -60,7 +60,7 @@
                 #binding-cells = <2>;
                 tapping_term_ms = <250>;
                 quick_tap_ms = <0>;
-                flavor = "balanced";
+                flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
         };
 
@@ -70,7 +70,7 @@
                 #binding-cells = <2>;
                 tapping_term_ms = <250>;
                 quick_tap_ms = <0>;
-                flavor = "balanced";
+                flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
         };
     };
@@ -87,21 +87,21 @@
 // |      |      |      |      |      |        |      |      |      |      |      |
 // |------+------+------+------+------|        |------+------+------+------+------|
 // |   A  |   R  |   S  |   T  |   G  |        |   M  |   N  |   E  |   I  |   O  |
-// |      |      | SHFT | CTRL |      |        |      | CTRL | SHFT |      |      |
+// |  GUI |  ALT | SHFT | CTRL |      |        |      | CTRL | SHFT |  ALT |  GUI |
 // |------+------+------+------+------|        |------+------+------+------+------|
 // |   Z  |   X  |   C  |   D  |   V  |        |   K  |   H  | ,  < | .  > | /  ? |
-// |      |      |      |      |      |        |      |      |      |      |      |
+// | SHFT |      |      |      |      |        |      |      |      |      | SHFT |
 // `------+------+------+------+------|        |------+------+------+------+------'
-//               | ESC  | TAB  | SPC  |        | BSP  | RET  | GUI  |
+//               | ESC  | TAB  | SPC  |        | BSP  | RET  | DEL  |
 //               |      | NUM  | NAV  |        | SYM  | FUNC |      |
 //               `--------------------'        `--------------------'
 //
 
                         bindings = <
-    &kp Q   &kp W     &kp F         &kp P        &kp B                     &kp J  &kp L         &kp U          &kp Y     &kp SQT
-    &kp A   &kp R     &hmm LSHIFT S &hmi LCTRL T &kp G                     &kp M  &hmi RCTRL N  &hmm RSHIFT E  &kp I     &kp O
-    &kp Z   &kp X     &kp C         &kp D        &kp V                     &kp K  &kp H         &kp COMMA      &kp DOT   &kp FSLH
-                      &kp LALT      &lt NUM TAB  &lt NAV SPACE      &lt SYM BSPC  &lt FUNC RET  &kp LGUI
+    &kp Q         &kp W       &kp F         &kp P        &kp B                     &kp J  &kp L         &kp U          &kp Y        &kp SQT
+    &hmp LGUI A   &hmr LALT R &hmm LSHIFT S &hmi LCTRL T &kp G                     &kp M  &hmi RCTRL N  &hmm RSHIFT E  &hmr LALT I  &hmp RGUI O
+    &hmm LSHIFT Z &kp X       &kp C         &kp D        &kp V                     &kp K  &kp H         &kp COMMA      &kp DOT      &hmm RSHIFT FSLH
+                              &kp LALT      &lt NUM TAB  &lt NAV SPACE      &lt SYM BSPC  &lt FUNC RET  &kp GUI
                         >;
                 };
                 
