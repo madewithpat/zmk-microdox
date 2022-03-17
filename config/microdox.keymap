@@ -97,42 +97,42 @@
 //               `--------------------'        `--------------------'
 //
 
-                        bindings = <
+                bindings = <
     &kp Q         &kp W       &kp F         &kp P        &kp B                     &kp J  &kp L         &kp U          &kp Y        &kp SQT
     &hmp LGUI A   &hmr LALT R &hmm LSHIFT S &hmi LCTRL T &kp G                     &kp M  &hmi RCTRL N  &hmm RSHIFT E  &hmr LALT I  &hmp RGUI O
     &hmm LSHIFT Z &kp X       &kp C         &kp D        &kp V                     &kp K  &kp H         &kp COMMA      &kp DOT      &hmm RSHIFT FSLH
                               &kp LALT      &lt NUM TAB  &lt NAV SPACE      &lt SYM BSPC  &lt FUNC RET  &kp GUI
-                        >;
-                };
+                >;
+            };
                 
-                nav_layer {
+            nav_layer {
 
 // Navigation Layer
 //		- Also contains some single-hand shortcuts for basic functions 
 //
 // ,----------------------------------.        ,----------------------------------.
-// | ESC  |      | PAST | COPY | CUT  |        | PGUP | HOME |  UP  | END  | DEL  |
+// | ESC  |      | PAST | COPY | CUT  |        | PGUP | HOME |  UP  | END  | BSPC |
 // |      |      |      |      |      |        |      |      |      |      |      |
 // |------+------+------+------+------|        |------+------+------+------+------|
-// |      |      |      |      | RET  |        | PGDN | LEFT | DOWN | RGHT | BSPC |
+// |      |      |      |      | RET  |        | PGDN | LEFT | DOWN | RGHT | RET  |
 // | GUI  | ALT  | SHFT | CTRL |      |        |      |      |      |      |      |
 // |------+------+------+------+------|        |------+------+------+------+------|
-// | UNDO |      |      |      | REDO |        |      | <-D  |      | D->  | RET  |
+// |      |      |      |      |      |        |      | <-D  |      | D->  | DEL  |
 // |      |      |      |      |      |        |      |      |      |      |      |
 // `-------------+------+------+------|        |------+------+------+-------------'
-//               |      |      |      |        | DEL  |      |      |
+//               |      |      |      |        |      |      |      |
 //               |      |      |      |        |      |      |      |
 //               `--------------------'        `--------------------'
 //
-                        bindings = <
+                bindings = <
    &kp ESC  &none     &kp LC(V)  &kp LC(C)   &kp LC(X)  &kp PG_UP &kp HOME &kp UP   &kp END   &kp BSPC
    &kp LGUI &kp LALT  &kp LSHIFT &kp LCTRL   &kp RET    &kp PG_DN &kp LEFT &kp DOWN &kp RIGHT &kp RET
    &none    &none     &kp PT     &kp NT      &none      &kp BSLH  &kp WINL &none    &kp WINR  &kp DEL
                       &trans     &trans      &trans     &trans    &trans   &trans
-                        >;
-                };
+                >;
+            };
 
-                sym_layer {
+            sym_layer {
 
 // Symbol Layer
 //		- Lots of WIP here
@@ -153,15 +153,15 @@
 //               |      |      |      |        |      |      |      |
 //               `--------------------'        `--------------------'
 //
-                        bindings = <
+                bindings = <
    &kp EXCL         &kp AT           &kp HASH          &kp DLLR         &kp PRCNT       &kp CARET   &kp AMPS          &kp ASTRK          &kp PIPE         &kp QMARK
    &hmp LGUI GRAVE  &hmr LALT LBRC   &hmm LSHIFT LPAR  &hmi LCTRL RPAR  &kp RBRC        &none       &hmi RCTRL EQUAL  &hmm RSHIFT MINUS  &hmr LALT COLON  &hmp RGUI SEMI
    &kp TILDE        &kp LT           &kp LBKT          &kp RBKT         &kp GT          &none       &kp PLUS          &kp UNDER          &kp BSLH         &kp FSLH
                                      &trans            &trans           &trans          &trans      &trans            &trans                        
-                        >;
-                };
+                >;
+            };
 
-                num_layer {
+            num_layer {
 
 // Numpad Layer
 //
@@ -179,15 +179,15 @@
 //               |      |      |      |         |      |      |      |
 //               `--------------------'         `--------------------'
 //
-                        bindings = <
-                &none    &none    &none      &none     &none          &kp ASTRK  &kp N7   &kp N8   &kp N9   &kp PLUS 
-                &kp LGUI &kp LALT &kp LSHIFT &kp LCTRL &none          &kp EQUAL  &kp N4   &kp N5   &kp N6   &kp MINUS
-                &none    &none    &none      &none     &none          &kp DOT    &kp N1   &kp N2   &kp N3   &kp N0   
-                                  &none      &trans    &none          &trans     &trans   &kp TAB 
-                        >;
-                };
+                bindings = <
+    &none    &none    &none      &none     &none          &kp ASTRK  &kp N7   &kp N8   &kp N9   &kp PLUS 
+    &kp LGUI &kp LALT &kp LSHIFT &kp LCTRL &none          &kp EQUAL  &kp N4   &kp N5   &kp N6   &kp MINUS
+    &none    &none    &none      &none     &none          &kp DOT    &kp N1   &kp N2   &kp N3   &kp N0   
+                      &none      &trans    &none          &trans     &trans   &kp TAB 
+                >;
+            };
 
-                func_layer {
+            func_layer {
 //
 // F-Key Layer
 //
@@ -204,17 +204,17 @@
 //               |      |      |      |         |      |      |      |
 //               |      |      |      |         |      | FUNC |      |
 //               `--------------------'         `--------------------'
-                        bindings = <
-                &kp F12 &kp F7 &kp F8 &kp F9  &none         &none    &none     &none      &none    &none
-                &kp F11 &kp F4 &kp F5 &kp F6  &none         &kp CAPS &kp RCTRL &kp RSHIFT &kp LALT &kp RGUI
-                &kp F10 &kp F1 &kp F2 &kp F3  &none         &none    &none     &none      &none    &none
-                               &trans &trans  &trans        &trans   &trans    &trans
-                        >;
-                };
+                bindings = <
+    &kp F12 &kp F7 &kp F8 &kp F9  &none         &none    &none     &none      &none    &none
+    &kp F11 &kp F4 &kp F5 &kp F6  &none         &kp CAPS &kp RCTRL &kp RSHIFT &kp LALT &kp RGUI
+    &kp F10 &kp F1 &kp F2 &kp F3  &none         &none    &none     &none      &none    &none
+                   &trans &trans  &trans        &trans   &trans    &trans
+                >;
+            };
 
-                adj_layer {
+            adj_layer {
 //
-// Layer Template
+// Adj Layer
 //
 // ,----------------------------------.         ,----------------------------------.
 // |      |      |      |      |      |         |      | BCLR |      |      |      |
@@ -230,13 +230,13 @@
 //               |      |      |      |         |      |      |      |
 //               `--------------------'         `--------------------'
 //
-                        bindings = <
-                &none &none &none &none &none    &none &bt BT_CLR    &none        &none         &none
-                &none &none &none &none &none    &none &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3
-                &none &none &none &none &none    &none &none         &none        &none         &none
-                            &none &none &none    &none &none         &none 
-                        >;
-                };
+                bindings = <
+        &none &none &none &none &none    &none &bt BT_CLR    &none        &none         &none
+        &none &none &none &none &none    &none &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3
+        &none &none &none &none &none    &none &none         &none        &none         &none
+                    &none &none &none    &none &none         &none 
+                >;
+            };
 
 //              blank_layer {
 //
