@@ -188,28 +188,29 @@
                 >;
             };            
 
-            func_layer {
+            fun_layer {
 //
 // F-Key Layer
+// + Left hand shortcuts
 //
 // ,----------------------------------.         ,----------------------------------.
-// |  F11 |  F12 |      |      |      |         |      |      |      |      |      |
+// | Brk  |      | Past | Copy | Cut  |         | Ins  |  F11 |  F12 | Prt  | Caps |
 // |      |      |      |      |      |         |      |      |      |      |      |
 // |------+------+------+------+------|         |------+------+------+------+------|
-// |  F1  |  F2  |  F3  |  F4  |  F5  |         | CAPS |      |      |      |      |
-// |      |      |      |      |      |         |      | CTRL | SHFT | ALT  | GUI  |
+// |      |      |      |      | Ret  |         |  F1  |  F2  |  F3  |  F4  |  F5  |
+// | GUI  | Alt  | Shft | Ctrl |      |         |      |      |      |      |      |
 // |------+------+------+------+------|         |------+------+------+------+------|
-// |  F6  |  F7  |  F8  |  F9  | F10  |         | BCLR | BT 1 | BT 2 | BT 3 | BT 4 |
+// |      |      |      |      | Bspc |         |  F6  |  F7  |  F8  |  F9  | F10  |
 // |      |      |      |      |      |         |      |      |      |      |      |
 // `-------------+------+------+------|         |------+------+------+-------------'
 //               |      |      |      |         |      |      |      |
 //               |      |      |      |         |      |      |      |
 //               `--------------------'         `--------------------'
                 bindings = <
-    &kp F11 &kp F12 &none  &none   &none         &none       &none         &none         &none         &none
-    &kp F1  &kp F2  &kp F3 &kp F4  &kp F5        &kp CAPS    &kp RCTRL     &kp RSHIFT    &kp LALT      &kp RGUI
-    &kp F6  &kp F7  &kp F8 &kp F9  &kp F10       &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
-                    &trans &trans  &trans        &trans      &trans        &trans
+    &kp PAUSE_BREAK  &none     &kp LC(V)  &kp LC(C)  &kp LC(X)     &kp INS  &kp F11  &kp F12  &kp PSCRN  &kp CAPS
+    &kp LGUI         &kp LALT  &kp LSHIFT &kp LCTRL  &kp RET       &kp F1   &kp F2   &kp F3   &kp F4     &kp F5
+    &none            &none     &none      &none      &kp BSPC      &kp F6   &kp F7   &kp F8   &kp F9     &kp F10
+                               &trans     &trans     &trans        &trans   &trans   &trans
                 >;
             };
 
@@ -218,13 +219,13 @@
 // Layer Template
 //
 // ,----------------------------------.         ,----------------------------------.
-// | boot |      |      |      |      |         |      |      |      |      | boot |
+// | boot |      | Bri+ | Vol+ | BCLR |         |      |      | NUML | SCRL | boot |
 // |      |      |      |      |      |         |      |      |      |      |      |
 // |------+------+------+------+------|         |------+------+------+------+------|
-// | rst  |      |      |      |      |         |      |      |      |      | rst  |
+// | rst  |      | Bri- | Vol- |      |         |      | BT 1 | BT 2 | BT 3 | rst  |
 // |      |      |      |      |      |         |      |      |      |      |      |
 // |------+------+------+------+------|         |------+------+------+------+------|
-// | LOCK |      |      |      |      |         |      |      |      |      |      |
+// | LOCK |      |      | MUTE |      |         |      |      |      |      |      |
 // |      |      |      |      |      |         |      |      |      |      |      |
 // `-------------+------+------+------|         |------+------+------+-------------'
 //               |      |      |      |         |      |      |      |
@@ -232,10 +233,10 @@
 //               `--------------------'         `--------------------'
 
                 bindings = <
-        &bootloader &none &none  &none  &none          &none  &none  &none &none &bootloader
-        &reset      &none &none  &none  &none          &none  &none  &none &none &reset
-        &tog LOK    &none &none  &none  &none          &none  &none  &none &none &none
-                          &trans &trans &trans         &trans &trans &trans 
+        &bootloader &none &none  &kp K_VOL_UP  &bt BT_CLR       &none  &none  &none &none &bootloader
+        &reset      &none &none  &kp K_VOL_DN  &kp C_MUTE       &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &reset
+        &tog LOK    &none &none  &kp K_MUTE    &kp K_MUTE2      &none  &none  &none &none &none
+                          &trans &trans        &trans           &trans &trans &trans 
                 >;
             };
 
