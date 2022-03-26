@@ -46,6 +46,16 @@
             bindings = <&kp>, <&kp>;
         };
 
+        hmb: homerow_mod_b {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MOD";
+            #binding-cells = <2>;
+            tapping_term_ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+
         th: tap_hold {
             compatible = "zmk,behavior-hold-tap";
             label = "TAP_HOLD";
@@ -100,9 +110,9 @@
 
                 bindings = <
     &kp Q         &kp W       &kp F         &kp P         &kp B                     &kp J    &kp L          &kp U          &kp Y       &kp SQT
-    &hm LGUI A    &hm LALT R  &hm LSHIFT S  &hm LCTRL T   &kp G                     &kp M    &hm RCTRL N    &hm RSHIFT E   &hm LALT I  &hm RGUI O
+    &hmb LGUI A   &hmb LALT R &hm LSHIFT S  &hm LCTRL T   &kp G                     &kp M    &hm RCTRL N    &hm RSHIFT E   &hmb LALT I  &hmb RGUI O
     &hm LSHIFT Z  &kp X       &kp C         &kp D         &kp V                     &kp K    &kp H          &kp COMMA      &kp DOT     &hm RSHIFT FSLH
-                              &kp LALT      &hlt NUM TAB  &qlt NAV SPACE      &qlt SYM BSPC  &hlt FUN RET   &kp GUI
+                              &kp LALT      &lt NUM TAB   &lt NAV SPACE       &lt SYM BSPC   &lt FUN RET   &kp GUI
                 >;
             };
                 
