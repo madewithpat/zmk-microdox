@@ -234,7 +234,7 @@
                 bindings = <
         &bootloader &none &none  &none  &none          &none  &none  &none &none &bootloader
         &reset      &none &none  &none  &none          &none  &none  &none &none &reset
-        &tog LCK    &none &none  &none  &none          &none  &none  &none &none &none
+        &tog LOK    &none &none  &none  &none          &none  &none  &none &none &none
                           &trans &trans &trans         &trans &trans &trans 
                 >;
             };
@@ -247,7 +247,7 @@
         &none   &none &none &none &none     &none &none &none &none &none
         &none   &none &none &none &none     &none &none &none &none &none
         &mo ULK &none &none &none &none     &none &none &none &none &none
-                      &none &none &mo ULCK  &none &none &none 
+                      &none &none &mo ULK   &none &none &none 
                 >;
             };
 
@@ -256,8 +256,8 @@
                 bindings = <
         &none    &none &none &none &none       &none &none &none &none &none
         &none    &none &none &none &none       &none &none &none &none &none
-        &tog LCK &none &none &none &none       &none &none &none &none &none
-                       &none &none &tog LCK    &none &none &none 
+        &tog LOK &none &none &none &none       &none &none &none &none &none
+                       &none &none &tog LOK    &none &none &none 
                 >;
             };
 
