@@ -33,7 +33,7 @@
 //          30  31  32      33  34  35
 
 / {
-    combos: {
+    combos {
         compatible = "zmk,combos";
 
         c_esc {
