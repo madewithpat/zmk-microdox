@@ -26,14 +26,14 @@
 #define PT LC(LS(TAB))
 #define NT LC(TAB)
 
-#define U_LST(TAP) &hmq LSHIFT TAP
-#define U_RST(TAP) &hmq RSHIFT TAP
-#define U_LCT(TAP) &hmq LCTRL TAP
-#define U_RCT(TAP) &hmq RCTRL TAP
-#define U_LAT(TAP) &hmq LALT TAP
-#define U_RAT(TAP) &hmq RRALT TAP
-#define U_LGT(TAP) &hmq LGUI TAP
-#define U_RGT(TAP) &hmq RGUI TAP
+#define LST(tapcode) &hmg LSHIFT tapcode
+#define RST(tapcode) &hmg RSHIFT tapcode
+#define LCT(tapcode) &hmg LCTRL tapcode
+#define RCT(tapcode) &hmg RCTRL tapcode
+#define LAT(tapcode) &hmg LALT tapcode
+#define RAT(tapcode) &hmg RRALT tapcode
+#define LGT(tapcode) &hmg LGUI tapcode
+#define RGT(tapcode) &hmg RGUI tapcode
 
 
 // Key Positions 
@@ -137,8 +137,8 @@
 
                 bindings = <
     &kp Q         &kp W       &kp F         &kp P         &kp B                     &kp J    &kp L          &kp U          &kp Y        &kp SQT
-    U_LGT(A)   U_LAT(R) U_LST(S) U_LCT(T)  &kp G                     &kp M    U_RCT(N)   U_RST(E)   U_LAT(I)   U_RGT(O)
-    U_LST(Z)   U_RAT(X)  &kp C         &kp D         &kp V                     &kp K    &kp H          &kp COMMA      U_RAT(DOT) U_RST(FSLH)
+    LGT(A)   LAT(R) LST(S) LCT(T)  &kp G                     &kp M    RCT(N)   RST(E)   LAT(I)   RGT(O)
+    LST(Z)   RAT(X)  &kp C         &kp D         &kp V                     &kp K    &kp H          &kp COMMA      RAT(DOT) RST(FSLH)
                               &kp ESC       &th NUM TAB   &th NAV SPACE       &kp BSPC  &th SYM RET    &kp DEL
                 >;
             };
@@ -272,7 +272,7 @@
 //
 //                bindings = <
 //            &none     &none     &none  &none  &none        &none            &kp N7  &kp N8  &kp N9  &kp N0 
-//            &kp LGUI  &kp LALT  U_LST(DOT)  U_LCT(EQUAL) &none        &kp MINUS  &kp N4  &kp N5  &kp N6  &kp RGUI
+//            &kp LGUI  &kp LALT  LST(DOT)  LCT(EQUAL) &none        &kp MINUS  &kp N4  &kp N5  &kp N6  &kp RGUI
 //            &none     &none     &none     &none   &none         &kp UNDER  &kp N1  &kp N2  &kp N3   &kp FSLH
 //                                &trans    &trans  &trans        &kp BSPC   &trans     &trans 
 //                >;
