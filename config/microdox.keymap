@@ -31,7 +31,7 @@
 #define LCT(tapcode) &hmg LCTRL tapcode
 #define RCT(tapcode) &hmg RCTRL tapcode
 #define LAT(tapcode) &hmg LALT tapcode
-#define RAT(tapcode) &hmg RRALT tapcode
+#define RAT(tapcode) &hmg RALT tapcode
 #define LGT(tapcode) &hmg LGUI tapcode
 #define RGT(tapcode) &hmg RGUI tapcode
 
