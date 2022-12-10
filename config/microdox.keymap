@@ -26,7 +26,31 @@
 #define PT LC(LS(TAB))
 #define NT LC(TAB)
 
+// Key Positions 
+//  0   1   2   3   4       5   6   7   8   9
+//  10  11  12  13  14      15  16  17  18  19
+//  20  21  22  23  24      25  26  27  28  29
+//          30  31  32      33  34  35
+
 / {
+    combos: {
+        compatible = "zmk,combos";
+
+        c_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+            layers = <0 1>;
+        }
+
+        c_semi {
+            timeout-ms = <50>;
+            key-positions = <18 19>;
+            bindings = <&kp SEMI>;
+            layers = <0 1>;
+        }
+    }
+    
     conditional_layers {        
         compatible = "zmk,conditional-layers";        
         
@@ -141,10 +165,10 @@
 //		- Also contains some single-hand shortcuts for basic functions 
 //
 // ,----------------------------------.        ,----------------------------------.
-// | ESC  |      | PAST | COPY | CUT  |        | PGUP | HOME |  UP  | END  | BSPC |
+// | ESC  |      | PAST | COPY | CUT  |        | HOME | PGUP | PGDN | END  | BSPC |
 // |      |      |      |      |      |        |      |      |      |      |      |
 // |------+------+------+------+------|        |------+------+------+------+------|
-// |      |      |      |      | RET  |        | PGDN | LEFT | DOWN | RGHT | RET  |
+// |      |      |      |      | RET  |        | LEFT | DOWN |  UP  | RGHT | RET  |
 // | GUI  | ALT  | SHFT | CTRL |      |        |      |      |      |      |      |
 // |------+------+------+------+------|        |------+------+------+------+------|
 // |      |      |      |      |      |        |      | <-D  |      | D->  | DEL  |
@@ -155,10 +179,10 @@
 //               `--------------------'        `--------------------'
 //
                 bindings = <
-   &kp ESC  &none     &kp LC(V)  &kp LC(C)   &kp LC(X)  &kp PG_UP &kp HOME &kp UP   &kp END   &kp BSPC
-   &kp LGUI &kp LALT  &kp LSHIFT &kp LCTRL   &kp RET    &kp PG_DN &kp LEFT &kp DOWN &kp RIGHT &kp RET
-   &none    &none     &kp PT     &kp NT      &none      &kp BSLH  &kp WINL &none    &kp WINR  &kp DEL
-                      &trans     &trans      &trans     &trans    &trans   &trans
+   &kp ESC  &none     &kp LC(V)  &kp LC(C)   &kp LC(X)  &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp BSPC
+   &kp LGUI &kp LALT  &kp LSHIFT &kp LCTRL   &kp RET    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp RET
+   &none    &none     &kp PT     &kp NT      &none      &kp BSLH  &kp WINL  &none     &kp WINR  &kp DEL
+                      &trans     &trans      &trans     &trans    &trans    &trans
                 >;
             };
 
