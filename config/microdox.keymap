@@ -47,6 +47,17 @@
             bindings = <&kp>, <&kp>;
         };
 
+        hmg: homerow_mod_gqt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MOD";
+            #binding-cells = <2>;
+            tapping_term_ms = <150>;
+            quick_tap_ms = <0>;
+            global-quick-tap;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
         hmb: homerow_mod_b {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD";
@@ -62,8 +73,8 @@
             label = "TAP_HOLD";
             #binding-cells = <2>;
             tapping_term_ms = <150>;
-            flavor = "hold-preferred";
-            bindings = <&kp>, <&kp>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&kp>;
         };
     };
 
@@ -91,9 +102,9 @@
 
                 bindings = <
     &kp Q         &kp W       &kp F         &kp P         &kp B                     &kp J    &kp L          &kp U          &kp Y        &kp SQT
-    &hm LGUI A    &hm LALT R  &hm LSHIFT S  &hm LCTRL T   &kp G                     &kp M    &hm RCTRL N    &hm RSHIFT E   &hm LALT I   &hm RGUI O 
+    &hmg LGUI A    &hmg LALT R  &hmg LSHIFT S  &hmg LCTRL T   &kp G                     &kp M    &hmg RCTRL N    &hmg RSHIFT E   &hmg LALT I   &hmg RGUI O 
     &hm LSHIFT Z  &hm RALT X  &kp C         &kp D         &kp V                     &kp K    &kp H          &kp COMMA      &hm RALT DOT &hm RSHIFT FSLH
-                              &kp ESC       &lt FUN TAB   &lt NAV SPACE       &lt SYM BSPC   &lt NUM RET    &kp DEL
+                              &kp ESC       &th FUN TAB   &th NAV SPACE       &th SYM BSPC   &th NUM RET    &kp DEL
                 >;
             };
 
