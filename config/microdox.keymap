@@ -130,7 +130,7 @@
     &kp Q         &kp W       &kp F         &kp P         &kp B                     &kp J    &kp L          &kp U          &kp Y        &kp SQT
     &hmg LGUI A    &hmg LALT R  &hmg LSHIFT S  &hmg LCTRL T   &kp G                     &kp M    &hmg RCTRL N    &hmg RSHIFT E   &hmg LALT I   &hmg RGUI O 
     &hm LSHIFT Z  &hm RALT X  &kp C         &kp D         &kp V                     &kp K    &kp H          &kp COMMA      &hm RALT DOT &hm RSHIFT FSLH
-                              &kp ESC       &th FUN TAB   &th NAV SPACE       &th SYM BSPC   &th NUM RET    &kp DEL
+                              &kp ESC       &th NAV TAB   &kp SPACE       &kp LSHIFT  &th SYM RET    &kp DEL
                 >;
             };
 
