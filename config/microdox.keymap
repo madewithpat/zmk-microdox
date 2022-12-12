@@ -136,10 +136,10 @@
 //
 
                 bindings = <
-    &kp Q    &kp W   &kp F    &kp P         &kp B               &kp J     &kp L        &kp U      &kp Y     &kp SQT
-    LGT(A)   LAT(R)  LST(S)   LCT(T)        &kp G               &kp M     RCT(N)       RST(E)     LAT(I)    RGT(O)
-    LST(Z)   RAT(X)  &kp C    &kp D         &kp V               &kp K     &kp H        &kp COMMA  RAT(DOT)  RST(FSLH)
-                     &kp ESC  &th NUM TAB   &th NAV SPACE       &kp BSPC  &th SYM RET  &kp DEL
+    &kp Q    &kp W   &kp F    &kp P         &kp B               &kp J         &kp L        &kp U      &kp Y     &kp SQT
+    LGT(A)   LAT(R)  LST(S)   LCT(T)        &kp G               &kp M         RCT(N)       RST(E)     LAT(I)    RGT(O)
+    LST(Z)   RAT(X)  &kp C    &kp D         &kp V               &kp K         &kp H        &kp COMMA  RAT(DOT)  RST(FSLH)
+                     &kp ESC  &th NUM TAB   &th NAV SPACE       &th SYM BSPC  &th FUN RET  &kp DEL
                 >;
             };
 
